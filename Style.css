@@ -1,76 +1,118 @@
 *{
 	box-sizing: border-box;
-	font-family: sans-serif;
 }
 
 body{
-	background-color: rgb(180, 180, 256);
+	background-color: hsl(212, 45%, 89%);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding: 0;
+	min-height: 100vh;
+	font-family: 'Outfit', sans-serif;
+	font-size: 15px;
 	margin: 0;
 }
 
-.attribution {
+.main-container {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
-	margin: 2.5rem;
-	padding: 0.5rem;
-	background-color: #eee;
-	width: 25%;
-	height: 20%;
-	overflow: hidden;
+	margin: 0;
+	padding: 1.1%;
+	background-color: white;
+	max-width: 18%;
+	border-radius: 15px;
+	text-align: center;
+}
+
+.main-container > img{
+	display: block;
+	width: 100%;
+	height: 100%;
 	border-radius: 15px;
 }
 
-.attribution img{
-	width: 200px;
-	height: 200px;
-	border-radius: 15px;
+.main-container > h3{
+	margin: 5% 2%;
+	color: hsl(218, 44%, 22%);
+	font-weight: bold;
 }
 
-.attribution h4{
-	text-align: center;
-	font-size: 18px;
-	color: #225;
-}
-
-.attribution p{
-	text-align: center;
+.main-container > p{
+	margin: 5% 2%;
+	color: hsl(220, 15%, 55%);
 	font-size: 14px;
-	color: #555;
 }
 
-@media screen and (max-width: 823px){
-	.attribution{
-		display: flex;
-		margin: 1rem;
-		padding: 0.5rem;
-		width: 60%;
-		height: 70%;
+footer{
+	position: relative;
+	margin: 20vh 0 0 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+@media screen and (max-width: 950px){
+	.main-container{
+		height: 45%;
+		max-width: 25%;
 	}
 
+	.main-container > h3{
+		padding: 2% 4%;
+	}
 
-	.attribution img{
-		width: 150px;
-		height: 150px;
-		
+	.main-container > p{
+		padding: 2% 4%;
+	}
+
+@media screen and (max-width: 750px){
+	.main-container{
+		height: 50%;
+		max-width: 30%;
+	}
+
+	.main-container > h3{
+		padding: 2% 4%;
+	}
+
+	.main-container > p{
+		padding: 2% 4%;
 	}
 }
 
-@media screen and (max-width: 285px){
-	.attribution{
-		margin: 0.5rem;
-		padding: 0.3rem;
-		width: 70%;
-		height: 70%;
+@media screen and (max-width: 500px){
+	.main-container{
+		height: 60%;
+		max-width: 50%;
 	}
 
-	.attribution img{
+	.main-container > h3{
+		padding: 2% 4%;
+	}
 
+	.main-container > p{
+		padding: 2% 4%;
+	}
+}
+
+@media screen and (max-width: 375px){
+	.main-container{
+		height: 70%;
+		max-width: 90%;
+		padding: 5%;
+	}
+
+	.main-container > h3{
+		padding: 2% 4%;
+	}
+
+	.main-container > p{
+		padding: 2% 4%;
+	}
+	footer{
+		display: none;
 	}
 }
